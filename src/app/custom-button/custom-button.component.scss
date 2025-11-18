@@ -1,0 +1,31 @@
+@import "../../assets/styles/_mixins";
+
+.btn-image {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-btn-primary {
+  @include button-theme();
+}
+
+.custom-btn-secondary {
+  --btn-bg: #6c757d;
+  --btn-border-color: #6c757d;
+  --btn-hover-bg: #5a6268;
+  --btn-hover-border-color: #5a6268;
+  @include button-theme();
+}
+
+.custom-btn-outline {
+  --btn-bg: transparent;
+  --btn-color: var(--btn-border-color);
+  --btn-hover-bg: var(--btn-bg);
+  --btn-hover-color: #fff;
+  @include button-theme(
+    var(--btn-bg),
+    var(--btn-color),
+    var(--btn-hover-bg),
+    var(--btn-hover-border-color)
+  );
+}
