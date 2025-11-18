@@ -1,0 +1,39 @@
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            Custom styles - This are the buttons without bootstrap styles
+          </h5>
+          <app-custom-button
+            type="primary"
+            [customTheme]="true"
+            (buttonClick)="onButtonClick($event)"
+          >
+            custom primary button
+          </app-custom-button>
+
+          <app-custom-button
+            [customTheme]="true"
+            data-theme="dark"
+            (buttonClick)="onButtonClick($event)"
+          >
+            custom Dark theme button
+          </app-custom-button>
+
+          <app-custom-button
+            type="secondary"
+            [customTheme]="true"
+            (buttonClick)="onButtonClick($event)"
+          >
+            custom secondary button
+          </app-custom-button>
+
+          <app-custom-button
+            type="secondary"
+            [customTheme]="true"
+            [outline]="true"
+            (buttonClick)="onButtonClick($event)"
+          >
+            custom outline button
+          </app-custom-button>
+        </div>
+      </div>

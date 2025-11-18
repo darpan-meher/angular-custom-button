@@ -1,0 +1,25 @@
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Sizes styles</h5>
+        <app-custom-button
+          type="primary"
+          size="sm"
+          (buttonClick)="onButtonClick($event)"
+        >
+          small button
+        </app-custom-button>
+
+        <app-custom-button type="primary" (buttonClick)="onButtonClick($event)">
+          medium button
+        </app-custom-button>
+
+        <app-custom-button
+          type="primary"
+          size="lg"
+          (buttonClick)="onButtonClick($event)"
+        >
+          large button
+        </app-custom-button>
+      </div>
+    </div>

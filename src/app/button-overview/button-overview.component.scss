@@ -1,0 +1,7 @@
+.overview-container > .card:first-child {
+  margin: 10px;
+}
+
+::ng-deep .overview-container button {
+  margin: 5px;
+}

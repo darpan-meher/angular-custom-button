@@ -1,0 +1,44 @@
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Variants</h5>
+        <app-custom-button type="primary" (buttonClick)="onButtonClick($event)">
+          Primary
+        </app-custom-button>
+
+        <app-custom-button type="success" (buttonClick)="onButtonClick($event)">
+          Success
+        </app-custom-button>
+
+        <app-custom-button type="danger" (buttonClick)="onButtonClick($event)">
+          Danger
+        </app-custom-button>
+
+        <app-custom-button type="warning" (buttonClick)="onButtonClick($event)">
+          Warning
+        </app-custom-button>
+
+        <app-custom-button type="info" (buttonClick)="onButtonClick($event)">
+          Info
+        </app-custom-button>
+
+        <app-custom-button type="light" (buttonClick)="onButtonClick($event)">
+          light
+        </app-custom-button>
+
+        <app-custom-button type="dark" (buttonClick)="onButtonClick($event)">
+          dark
+        </app-custom-button>
+
+        <app-custom-button type="link" (buttonClick)="onButtonClick($event)">
+          link
+        </app-custom-button>
+
+        <app-custom-button
+          type="primary"
+          imageUrl="./assets/logo.png"
+          (buttonClick)="onButtonClick($event)"
+        >
+          With Image
+        </app-custom-button>
+      </div>
+    </div>
